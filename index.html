@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAG ADDED -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICON CODE ADDED -->
+  <link rel="icon" type="image/png" href="./public/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <link rel="shortcut icon" href="./public/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png" />
+  <link rel="manifest" href="./public/site.webmanifest" />
+  <!-- ICON CDN ADDED -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- STYLE FILE ADDED -->
+  <link rel="stylesheet" href="./src/style.css">
+  <!-- WEBSITE TITLE ADDED -->
+  <title>SUDOKU GAME</title>
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <section class="HD_SECTION">
+    <div class="HD_DIV">
+      <h1 class="HD">SUDOKU GAME</h1>
+    </div>
+  </section>
+  <!-- GAME SETUP SECTION1 -->
+  <section class="GAME_SECTIONS">
+    <div class="BTN_SECTION">
+      <button class="BTN" id="START" title="Start The Game">
+        <i class="fa-solid fa-play fa-xl" style="color: #ffffff;"></i>
+      </button>
+      <button class="BTN" id="NEW" title="New Game">
+        <i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i>
+      </button>
+      <button class="BTN" id="ANSWER" title="Solution">
+        <i class="fa-solid fa-flask fa-xl" style="color: #ffffff;"></i>
+      </button>
+    </div>
+  </section>
+  <!-- SUDOKU BOARD -->
+  <section class="SUDOKUSEC">
+    <div class="MAIN" id="MAIN">
+      <div id="ROW1">
+        <div class="BOX" id="BOX1"></div>
+        <div class="BOX" id="BOX2"></div>
+        <div class="BOX" id="BOX3"></div>
+      </div>
+      <div id="ROW2">
+        <div class="BOX" id="BOX4"></div>
+        <div class="BOX" id="BOX5"></div>
+        <div class="BOX" id="BOX6"></div>
+      </div>
+      <div id="ROW3">
+        <div class="BOX" id="BOX7"></div>
+        <div class="BOX" id="BOX8"></div>
+        <div class="BOX" id="BOX9"></div>
+      </div>
+    </div>
+  </section>
+  <!-- GAME SETUP SECTION2 -->
+  <section class="GAME_SECTIONS1">
+    <!-- TIMER FOR GAME -->
+    <div class="CHANCE_DIV">
+      <p class="CHANCEP">Time Remains <span id="HOUR">00</span> : <span id="MIN">00</span> : <span id="SEC">00</span></p>
+    </div>
+    <div class="SELECT_DIV">
+      <select name="DifficultLevel" class="OPTIONS" id="DIFFICULT">
+        <option hidden value="">Choose Levels</option>
+        <option value="EASY">Easy</option>
+        <option value="MEDIUM">Medium</option>
+        <option value="HARD">Hard</option>
+        <option value="VERYHARD">Very Hard</option>
+        <option value="INHUMAN">Inhuman</option>
+        <option value="IMPOSSIBLE">Impossible</option>
+      </select>
+      <select name="TimeParameter" class="OPTIONS" id="TIMES">
+        <option hidden value="">Choose Time</option>
+        <option value="00:15:00">00:15:00</option>
+        <option value="00:30:30">00:30:00</option>
+        <option value="00:45:00">00:45:00</option>
+        <option value="01:00:00">01:00:00</option>
+        <option value="01:30:00">01:30:00</option>
+        <option value="02:00:00">02:00:00</option>
+      </select>
+    </div>
+  </section>
+  <!-- SCRIPT TAG ADDED -->
+  <script type="module" src="./src/script.js"></script>
+</body>
+</html>
